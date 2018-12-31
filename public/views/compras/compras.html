@@ -1,0 +1,81 @@
+<div class="row">
+  <h1>Datos de Productor</h1>
+</div>
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <label for="folio">Folio</label>
+    <input type="text" class="form-control" id="folio" placeholder="Ej. 12345">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="nombre" class="scr-only">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Ej. Alan">
+  </div>
+  <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+<hr class="my-4">
+<div class="row">
+  <h1>Datos del Grano</h1>
+</div>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="grano">Tipo de grano</label>
+      <select id="grano" class="form-control">
+        <option selected>Selecciona...</option>
+        <option>Maíz</option>
+        <option>Trigo</option>
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cantidad">Cantidad (kilogramos)</label>
+      <input type="text" class="form-control" id="cantidad" placeholder="Ej. 10,000">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="plagaViva">% de Plaga viva</label>
+      <input type="text" class="form-control" id="plagaViva" placeholder="Ej. 0.1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="plagaMuerta">% de Plaga muerta</label>
+      <input type="text" class="form-control" id="plagaMuerta" placeholder="Ej. 0.1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="humedad">% de Humedad</label>
+      <input type="text" class="form-control" id="humedad" placeholder="Ej. 0.1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="impureza">% de Impureza</label>
+      <input type="text" class="form-control" id="impureza" placeholder="Ej. 0.1">
+    </div>
+  </div>
+  <hr class="my-4">
+  <div class="row">
+    <h4>Grano dañado</h4>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="ahonagado">% de Ahonagado</label>
+      <input type="text" class="form-control" id="ahonagado" placeholder="Ej. 0.1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inmaduro">% de Inmaduro</label>
+      <input type="text" class="form-control" id="inmaduro" placeholder="Ej. 0.1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="picado">% de Picado</label>
+      <input type="text" class="form-control" id="picado" placeholder="Ej. 0.1">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="manchado">% de Manchado</label>
+      <input type="text" class="form-control" id="manchado" placeholder="Ej. 0.1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="quebrado">% de Quebrado</label>
+      <input type="text" class="form-control" id="quebrado" placeholder="Ej. 0.1">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success">Guardar</button>
+</form>
