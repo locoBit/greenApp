@@ -6,41 +6,41 @@
     <div class="form-row">
       <div class="form-group col-md-4">
         <label for="folio">Folio</label>
-        <input type="text" class="form-control" id="folio" placeholder="Ej. 12345">
+        <input type="text" class="form-control" id="folio" placeholder="Ej. 12345" ng-model="productor.folio">
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-4">
         <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ej. Alan">
+        <input type="text" class="form-control" id="nombre" placeholder="Ej. Alan" ng-model="productor.nombre">
       </div>
       <div class="form-group col-md-4">
         <label for="apPaterno">Apellido Paterno</label>
-        <input type="text" class="form-control" id="apPaterno" placeholder="Ej. Hernández">
+        <input type="text" class="form-control" id="apPaterno" placeholder="Ej. Hernández" ng-model="productor.apPaterno">
       </div>
       <div class="form-group col-md-4">
         <label for="apMaterno">Apellido Materno</label>
-        <input type="text" class="form-control" id="apMaterno" placeholder="Ej. López">
+        <input type="text" class="form-control" id="apMaterno" placeholder="Ej. López" ng-model="productor.apMaterno">
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-4">
         <label for="estado">Estado</label>
-        <select id="estado" class="form-control">
+        <select id="estado" class="form-control" ng-model="productor.estado">
           <option selected>Selecciona...</option>
           <option>México</option>
         </select>
       </div>
       <div class="form-group col-md-4">
         <label for="municipio">Municipio</label>
-        <select id="municipio" class="form-control">
+        <select id="municipio" class="form-control" ng-model="productor.municipio">
           <option selected>Selecciona...</option>
           <option>Toluca</option>
         </select>
       </div>
       <div class="form-group col-md-4">
         <label for="localidad">Localidad</label>
-        <select id="localidad" class="form-control">
+        <select id="localidad" class="form-control" ng-model="productor.localidad">
           <option selected>Selecciona...</option>
           <option>Prados de Tollocan</option>
         </select>
@@ -49,7 +49,7 @@
     <div class="form-row">
       <div class="form-group col-md-12">
         <label for="direccion">Dirección</label>
-        <input type="text" class="form-control" id="direccion" placeholder="Ej. Cond. 27 lote 4">
+        <input type="text" class="form-control" id="direccion" placeholder="Ej. Cond. 27 lote 4" ng-model="predio.direccion">
       </div>
     </div>
     <hr class="my-4">
@@ -59,31 +59,31 @@
     <div class="form-row">
       <div class="form-group col-md-4">
         <label for="nombrePropietario">Nombre</label>
-        <input type="text" class="form-control" id="nombrePropietario" placeholder="Ej. Alan">
+        <input type="text" class="form-control" id="nombrePropietario" placeholder="Ej. Alan" ng-model="predio.nombrePropietario">
       </div>
       <div class="form-group col-md-4">
         <label for="apPaternoPropietario">Apellido Paterno</label>
-        <input type="text" class="form-control" id="apPaternoPropietario" placeholder="Ej. Hernández">
+        <input type="text" class="form-control" id="apPaternoPropietario" placeholder="Ej. Hernández" ng-model="predio.apPaternoPropietario">
       </div>
       <div class="form-group col-md-4">
         <label for="apMaternoPropietario">Apellido Materno</label>
-        <input type="text" class="form-control" id="apMaternoPropietario" placeholder="Ej. López">
+        <input type="text" class="form-control" id="apMaternoPropietario" placeholder="Ej. López" ng-model="predio.apMaternoPropietario">
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-4">
         <label for="superficie">Superficie (Hectareas)</label>
-        <input type="text" class="form-control" id="superficie" placeholder="Ej. 100">
+        <input type="text" class="form-control" id="superficie" placeholder="Ej. 100" ng-model="predio.superficie">
       </div>
       <div class="form-group col-md-4">
         <label for="latitud">Latitud</label>
-        <input type="text" class="form-control" id="latitud" placeholder="Ej. 19.290852">
+        <input type="text" class="form-control" id="latitud" placeholder="Ej. 19.290852" ng-model="predio.latitud">
       </div>
       <div class="form-group col-md-4">
         <label for="longitud">Longitud</label>
-        <input type="text" class="form-control" id="longitud" placeholder="Ej. -99.652846">
+        <input type="text" class="form-control" id="longitud" placeholder="Ej. -99.652846" ng-model="predio.longitud">
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-primary" ng-click="guardarProductor()">Guardar</button>
   </form>
 </div>
