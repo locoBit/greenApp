@@ -4,12 +4,15 @@ var compras = angular.module('compras', []);
 
 compras.component('compras', {
     templateUrl: 'views/compras/compras.html',
-    controller: function($scope, $http, $location, materiasService) {
+    controller: function($scope, $http) {
 
-      $scope.submit = () => {
-        if ($scope.email === 'admin@admin.com') {
-          $location.path('/admin');
-        }
-      };
+        $scope.buscarProductor = () => {
+            const { folio } = $scope;
+
+            $http.get(`http://127.0.0.1:3000/api/productores/folio/${folio}`)
+                .then((res) => {
+                    console.log(res);
+                });
+        };
     }
 });
