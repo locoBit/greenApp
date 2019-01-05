@@ -5,7 +5,6 @@
   <div class="form-group mb-2">
     <label for="folio">Folio</label>
     <input type="text" class="form-control" id="folio" placeholder="Ej. 12345" ng-model="folio">
-    {{folio}}
   </div>
   <div class="form-group mx-sm-3 mb-2">
     <button type="submit" class="btn btn-primary" ng-click="buscarProductor()">Buscar</button>
@@ -19,7 +18,7 @@
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="grano">Tipo de grano</label>
-      <select id="grano" class="form-control">
+      <select id="grano" class="form-control" ng-model="grano">
         <option selected>Selecciona...</option>
         <option>Maíz</option>
         <option>Trigo</option>
@@ -27,25 +26,25 @@
     </div>
     <div class="form-group col-md-3">
       <label for="cantidad">Cantidad (kilogramos)</label>
-      <input type="text" class="form-control" id="cantidad" placeholder="Ej. 10,000">
+      <input type="text" class="form-control" id="cantidad" placeholder="Ej. 10,000" ng-model="cantidad">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="plagaViva">% de Plaga viva</label>
-      <input type="text" class="form-control" id="plagaViva" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="plagaViva" placeholder="Ej. 0.1" ng-model="plagaViva">
     </div>
     <div class="form-group col-md-3">
       <label for="plagaMuerta">% de Plaga muerta</label>
-      <input type="text" class="form-control" id="plagaMuerta" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="plagaMuerta" placeholder="Ej. 0.1" ng-model="plagaMuerta">
     </div>
     <div class="form-group col-md-3">
       <label for="humedad">% de Humedad</label>
-      <input type="text" class="form-control" id="humedad" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="humedad" placeholder="Ej. 0.1" ng-model="humedad">
     </div>
     <div class="form-group col-md-3">
       <label for="impureza">% de Impureza</label>
-      <input type="text" class="form-control" id="impureza" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="impureza" placeholder="Ej. 0.1" mg-model="impureza">
     </div>
   </div>
   <hr class="my-4">
@@ -55,26 +54,26 @@
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="ahonagado">% de Ahonagado</label>
-      <input type="text" class="form-control" id="ahonagado" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="ahonagado" placeholder="Ej. 0.1" ng-model="ahonagado">
     </div>
     <div class="form-group col-md-3">
       <label for="inmaduro">% de Inmaduro</label>
-      <input type="text" class="form-control" id="inmaduro" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="inmaduro" placeholder="Ej. 0.1" ng-model="inmaduro">
     </div>
     <div class="form-group col-md-3">
       <label for="picado">% de Picado</label>
-      <input type="text" class="form-control" id="picado" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="picado" placeholder="Ej. 0.1" ng-model="picado">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="manchado">% de Manchado</label>
-      <input type="text" class="form-control" id="manchado" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="manchado" placeholder="Ej. 0.1" ng-model="manchado">
     </div>
     <div class="form-group col-md-3">
       <label for="quebrado">% de Quebrado</label>
-      <input type="text" class="form-control" id="quebrado" placeholder="Ej. 0.1">
+      <input type="text" class="form-control" id="quebrado" placeholder="Ej. 0.1" ng-model="quebrado">
     </div>
   </div>
-  <button type="submit" class="btn btn-success">Guardar</button>
+  <button type="submit" class="btn btn-success" ng-click="enviarCompra()">Guardar</button>
 </form>
